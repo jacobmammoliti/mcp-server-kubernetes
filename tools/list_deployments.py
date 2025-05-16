@@ -6,7 +6,7 @@ class Deployment(TypedDict):
     namespace: str
     selector: dict
 
-# List all pods in a specific namespace
+# List all deployments in a specific namespace
 def list_deployments(namespace: str) -> list:
     """Get a list of deployments in the specified namespace"""
     deployments_list = []

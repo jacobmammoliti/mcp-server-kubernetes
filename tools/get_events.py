@@ -8,7 +8,7 @@ class Event(TypedDict):
     involved_object: dict
     count: int
 
-# List all pods in a specific namespace
+# Get all events in a specific namespace
 def get_events(namespace: str) -> list:
     """Get a list of events in the specified namespace"""
     events_list = []
